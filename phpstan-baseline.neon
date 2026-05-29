@@ -7451,7 +7451,7 @@ parameters:
 				             Throw an Exception instead of using setError$#
 			'''
 			identifier: method.deprecated
-			count: 3
+			count: 5
 			path: administrator/components/com_users/src/Model/LevelModel.php
 
 		-
@@ -7475,6 +7475,14 @@ parameters:
 			identifier: method.deprecated
 			count: 3
 			path: administrator/components/com_users/src/Model/LevelsModel.php
+
+		-
+    		message: '''
+        		#^Call to deprecated method shouldUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel:\n7\.0$#
+      		'''
+      		identifier: method.deprecated
+      		count: 2
+      		path: administrator/components/com_users/src/Model/LevelModel.php
 
 		-
 			message: '''
